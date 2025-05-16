@@ -8,7 +8,7 @@ import {
 
 interface SocialMediaProps {
   id: string;
-  icon: any;
+  icon: React.ElementType;
   href: string;
 }
 

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { MoonIcon } from './Icons';
 import ResponsiveHeader from './ResponsiveHeader';
 import Button from './Button';
+import Image from 'next/image';
 
 const NAV_INPUTS = [
   {
@@ -38,7 +39,11 @@ export default function Header() {
   return (
     <header className="fixed w-full bg-white flex items-center justify-between py-4 px-36 shadow-sm z-100">
       <a href="" className="flex items-center gap-2">
-        <img className="w-10" src={'./images/logo-GoalMind.svg'} />
+        <Image
+          className="w-10"
+          src={'./images/logo-GoalMind.svg'}
+          alt="Logo de GoalMind"
+        />
         <h3 className="text-2xl font-bold text-blue-500">
           Goal<span className="text-black">Mind</span>
         </h3>

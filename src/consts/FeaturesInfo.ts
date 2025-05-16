@@ -4,12 +4,12 @@ import { BrainIcon } from '@/components/Icons';
 
 interface FeaturesProps {
   id: number;
-  icon: any;
+  icon: React.ElementType;
   title: string;
   description: string;
 }
 
-export const FEATURES_INFO = [
+export const FEATURES_INFO: FeaturesProps[] = [
   {
     id: 1,
     icon: TargetIcon,
