@@ -40,7 +40,8 @@ export default function Header() {
     <header className="fixed w-full bg-white flex items-center justify-between py-4 px-36 shadow-sm z-100">
       <a href="" className="flex items-center gap-2">
         <Image
-          className="w-10"
+          width={40}
+          height={40}
           src={'./images/logo-GoalMind.svg'}
           alt="Logo de GoalMind"
         />
