@@ -1,3 +1,4 @@
+import CallToAction from '@/sections/CallToAction';
 import Features from '@/sections/Features';
 import Hero from '@/sections/Hero';
 import HowToUse from '@/sections/HowToUse';
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Features />
       <HowToUse />
+      <CallToAction />
     </>
   );
 }

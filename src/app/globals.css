@@ -3,6 +3,7 @@
 @theme {
   --font-montserrat: var(--font-montserrat);
   --font-inter: var(--font-inter);
+  --color-primary: #222;
 }
 
 html,
