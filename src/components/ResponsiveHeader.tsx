@@ -16,10 +16,10 @@ export default function ResponsiveHeader() {
 
   return (
     <>
-      <div className="flex items-center justify-center gap-4">
+      <div className="flex items-center justify-center gap-4 xl:hidden">
         <MoonIcon className=" size-12 cursor-pointer p-2 rounded-lg hover:bg-green-400 hover:text-white hover:scale-110 transition" />
         <label
-          className="menu-button block xl:hidden"
+          className="menu-button"
           onClick={handleShowMenu}
           htmlFor={menuCheckboxId}
         >
