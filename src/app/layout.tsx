@@ -32,7 +32,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={` ${montserrat.variable} ${inter.variable} antialiased`}>
         <Header />
-        <main className="relative top-23">{children}</main>
+        <main className="relative top-19">{children}</main>
         <Footer />
       </body>
     </html>

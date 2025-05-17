@@ -7,12 +7,12 @@ export default function Welcome() {
       <h1 className="text-6xl font-bold text-blue-500 z-10">
         Goal<span className="text-black">Mind</span>
       </h1>
-      <p className="text-2xl text-gray-600 max-w-200 text-center">
+      <p className="text-2xl text-gray-600 max-w-100 md:max-w-200 text-center">
         Visualiza, planifica y alcanza tus objetivos con el poder de la
         inteligencia artificial
       </p>
       <div className="flex gap-4 z-10">
-        <Button href="/dashboard">
+        <Button size="lg" href="/dashboard">
           Comenzar Ahora
           <RightArrowIcon className="size-8" />
         </Button>

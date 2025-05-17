@@ -1,7 +1,9 @@
 'use client';
 
 import { useId, useState } from 'react';
-import { BarsIcon } from './Icons';
+import { BarsIcon, MoonIcon } from './Icons';
+import { NAV_INPUTS } from '@/consts/HeaderNav';
+import Button from './Button';
 
 export default function ResponsiveHeader() {
   const [isChecked, setIsChecked] = useState(false);
@@ -14,19 +16,40 @@ export default function ResponsiveHeader() {
 
   return (
     <>
-      <label
-        className="block xl:hidden"
-        onClick={handleShowMenu}
-        htmlFor={menuCheckboxId}
-      >
-        <BarsIcon className=" size-10 cursor-pointer  hover:text-blue-500 hover:scale-110 transition" />
-      </label>
+      <div className="flex items-center justify-center gap-4">
+        <MoonIcon className=" size-12 cursor-pointer p-2 rounded-lg hover:bg-green-400 hover:text-white hover:scale-110 transition" />
+        <label
+          className="menu-button block xl:hidden"
+          onClick={handleShowMenu}
+          htmlFor={menuCheckboxId}
+        >
+          <BarsIcon className=" size-12 cursor-pointer p-2 rounded-lg hover:bg-green-400 hover:text-white hover:scale-110 transition" />
+        </label>
 
-      <input type="checkbox" id={menuCheckboxId} hidden />
+        <input type="checkbox" id={menuCheckboxId} hidden />
+      </div>
 
       {isChecked && (
-        <aside className="fixed top-30 right-0 bg-blue-200 w-full h-screen z-100">
-          <h1>holi</h1>
+        <aside className="menu fixed top-19 right-0 bg-white w-full h-screen z-100 flex flex-col gap-4 p-8">
+          <nav>
+            <ul className="flex flex-col gap-4">
+              {NAV_INPUTS.map(({ input, href }) => (
+                <li key={input}>
+                  <a
+                    className="block p-3 rounded-lg text-lg font-inter font-semibold hover:bg-blue-500 hover:text-white hover:-translate-y-1 transition"
+                    href={href}
+                  >
+                    {input}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <div className="flex justify-center">
+            <Button className="w-full flex  justify-center" size="lg">
+              Iniciar Sesión
+            </Button>
+          </div>
         </aside>
       )}
     </>
