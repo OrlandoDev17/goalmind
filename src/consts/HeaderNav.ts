@@ -3,7 +3,7 @@ interface HeaderNavProps {
   href: string;
 }
 
-export const NAV_INPUTS = [
+export const NAV_INPUTS: HeaderNavProps[] = [
   {
     input: 'Inicio',
     href: '#',
