@@ -9,12 +9,12 @@ export const NAV_INPUTS: HeaderNavProps[] = [
     href: '#',
   },
   {
-    input: 'Dashboard',
-    href: '/dashboard',
-  },
-  {
     input: 'Metas',
     href: '/metas',
+  },
+  {
+    input: 'Dashboard',
+    href: '/dashboard',
   },
   {
     input: 'Análisis',

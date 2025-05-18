@@ -3,7 +3,7 @@ import { FOOTER_LINKS } from '@/consts/FooterNav';
 
 export default function Footer() {
   return (
-    <footer className="mt-36 mb-8 gap-12 mx-12 md:mx-24 xl:mx-36">
+    <footer className="mt-36 mb-8 gap-12 mx-10 md:mx-24 xl:mx-36">
       <section className="grid grid-cols-1 xl:grid-cols-3 xl:place-items-center xl:items-start gap-4">
         <article className="flex items-start flex-col gap-6">
           <picture className="flex items-center gap-2">

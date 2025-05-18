@@ -2,7 +2,7 @@ import { SOCIAL_LINKS } from '@/consts/SocialMedias';
 
 export default function SocialMedias() {
   return (
-    <ul className="flex items-center justify-center gap-6">
+    <ul className="flex place-items-center gap-2 md:gap-6 ">
       {SOCIAL_LINKS.map(({ id, icon: Icon, href }) => (
         <li key={id}>
           <a href={href}>

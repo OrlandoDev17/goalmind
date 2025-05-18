@@ -1,6 +1,6 @@
-import Button from '@/components/Button';
+import Button from '@/components/ui/Button';
 import { RightArrowIcon } from '@/components/Icons';
-import SectionContainer from '@/components/SectionContainer';
+import SectionContainer from '@/components/ui/SectionContainer';
 
 export default function CallToAction() {
   return (

@@ -4,7 +4,7 @@ interface ButtonProps {
   children?: ReactNode;
   className?: string;
   href?: string;
-  size: string;
+  size?: string;
 }
 
 export default function Button({

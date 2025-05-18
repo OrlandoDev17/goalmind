@@ -1,9 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import { MoonIcon } from './Icons';
+import { MoonIcon } from '@/components/Icons';
 import ResponsiveHeader from './ResponsiveHeader';
-import Button from './Button';
+import Button from '@/components/ui/Button';
 import Image from 'next/image';
 import { NAV_INPUTS } from '@/consts/HeaderNav';
 
@@ -18,7 +18,7 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed w-full bg-white flex items-center justify-between py-2 px-8 md:px-24 xl:px-36 border-b-2 border-gray-200 z-100">
+    <header className="fixed w-full bg-white flex items-center justify-between py-2 px-10 md:px-24 xl:px-36 border-b-2 border-gray-200 z-100">
       <a href="" className="flex items-center gap-2">
         <Image
           width={40}
@@ -47,13 +47,13 @@ export default function Header() {
           ))}
         </ul>
       </nav>
-      <div className="hidden xl:flex items-center gap-4">
+      <div className="flex items-center gap-4">
         <MoonIcon className="size-7" />
-        <Button size="base" href="#">
+        <Button className="hidden xl:flex" size="base" href="#">
           Iniciar Sesión
         </Button>
+        <ResponsiveHeader />
       </div>
-      <ResponsiveHeader />
     </header>
   );
 }

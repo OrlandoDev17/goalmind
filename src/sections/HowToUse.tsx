@@ -1,6 +1,6 @@
-import Button from '@/components/Button';
+import Button from '@/components/ui/Button';
 import { RightArrowIcon } from '@/components/Icons';
-import SectionContainer from '@/components/SectionContainer';
+import SectionContainer from '@/components/ui/SectionContainer';
 import { STEPS_TO_USE } from '@/consts/StepsToUse';
 
 export default function HowToUse() {
@@ -26,7 +26,7 @@ export default function HowToUse() {
           <RightArrowIcon className="size-8" />
         </Button>
       </aside>
-      <div className="bg-gradient-to-b from-zinc-100 via-zinc-300 to-zinc-600 w-104 h-64 md:w-156 md:h-96 rounded-lg flex items-end">
+      <div className="bg-gradient-to-b from-zinc-100 via-zinc-300 to-zinc-600 w-76 h-46 sm:w-104 sm:h-64 md:w-156 md:h-96 rounded-lg flex items-end">
         <span className="p-4 text-xl text-white font-semibold font-inter">
           Dashboard Intuitivo y Personalizado
         </span>

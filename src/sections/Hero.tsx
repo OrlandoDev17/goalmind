@@ -1,5 +1,5 @@
-import SectionContainer from '@/components/SectionContainer';
-import ParticlesCanvas from '@/components/ParticleCanvas';
+import SectionContainer from '@/components/ui/SectionContainer';
+import ParticlesCanvas from '@/components/animations/ParticleCanvas';
 import Welcome from '@/components/Welcome';
 
 export default function Hero() {

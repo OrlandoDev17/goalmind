@@ -1,4 +1,3 @@
-// components/ParticlesCanvas.tsx
 'use client';
 
 import { useEffect, useRef } from 'react';
@@ -15,6 +14,34 @@ interface Particle {
 export default function ParticlesCanvas() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const particlesRef = useRef<Particle[]>([]);
+  const colors = ['#0077FF', '#2C2C2C', '#00FF99'];
+
+  // Función para determinar la cantidad de partículas según el tamaño de pantalla
+  const getParticleCount = () => {
+    const screenWidth = window.innerWidth;
+    return screenWidth > 1200 ? 125 : screenWidth > 800 ? 80 : 40;
+  };
+
+  const createParticles = () => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    const count = getParticleCount();
+    const particles: Particle[] = [];
+
+    for (let i = 0; i < count; i++) {
+      particles.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        radius: Math.random() * 5 + 3,
+        dx: (Math.random() - 0.5) * 0.5,
+        dy: (Math.random() - 0.5) * 0.5,
+        color: colors[Math.floor(Math.random() * colors.length)],
+      });
+    }
+
+    particlesRef.current = particles;
+  };
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -23,31 +50,14 @@ export default function ParticlesCanvas() {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    const colors = ['#0077FF', '#2C2C2C', '#00FF99'];
-
     const resizeCanvas = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
+      createParticles(); // Se asegura de que createParticles esté definida antes de llamarla
     };
 
-    resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
-
-    // Crear partículas
-    const createParticles = (count: number) => {
-      const particles: Particle[] = [];
-      for (let i = 0; i < count; i++) {
-        particles.push({
-          x: Math.random() * canvas.width,
-          y: Math.random() * canvas.height,
-          radius: Math.random() * 5 + 3,
-          dx: (Math.random() - 0.5) * 0.5,
-          dy: (Math.random() - 0.5) * 0.5,
-          color: colors[Math.floor(Math.random() * colors.length)],
-        });
-      }
-      particlesRef.current = particles;
-    };
+    resizeCanvas(); // Llamar al iniciar
 
     const animate = () => {
       if (!ctx || !canvas) return;
@@ -58,7 +68,7 @@ export default function ParticlesCanvas() {
         p.x += p.dx;
         p.y += p.dy;
 
-        // Rebote en bordes
+        // Rebote en los bordes
         if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
         if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
 
@@ -71,7 +81,7 @@ export default function ParticlesCanvas() {
       requestAnimationFrame(animate);
     };
 
-    createParticles(125);
+    createParticles();
     animate();
 
     return () => {

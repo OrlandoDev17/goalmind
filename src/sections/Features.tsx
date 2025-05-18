@@ -1,5 +1,5 @@
-import FeatureCards from '@/components/FeatureCards';
-import SectionContainer from '@/components/SectionContainer';
+import FeatureCards from '@/components/ui/FeatureCards';
+import SectionContainer from '@/components/ui/SectionContainer';
 
 export default function Features() {
   return (
@@ -7,8 +7,8 @@ export default function Features() {
       id="features"
       className="bg-gradient-to-b from-blue-50 to-gray-100 gap-12 pb-24"
     >
-      <div className="flex flex-col items-center justify-center mt-8 gap-6">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-inter">
+      <div className="flex flex-col items-center justify-center mt-8 gap-6 px-10">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-inter text-center">
           Potencia tus objetivos con inteligencia
         </h2>
         <p className="text-base md:text-lg max-w-150 lg:max-w-220 text-center text-gray-600 font-semibolds">
