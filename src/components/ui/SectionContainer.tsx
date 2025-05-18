@@ -14,7 +14,7 @@ export default function SectionContainer({
   return (
     <section
       id={id}
-      className={`flex flex-col items-center justify-center  ${className}`}
+      className={`flex flex-col items-center justify-center w-full ${className}`}
     >
       {children}
     </section>

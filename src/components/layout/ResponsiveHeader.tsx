@@ -1,9 +1,10 @@
 'use client';
 
 import { useId, useState } from 'react';
-import { BarsIcon, MoonIcon } from '@/components/Icons';
+import { BarsIcon } from '@/components/Icons';
 import { NAV_INPUTS } from '@/consts/HeaderNav';
 import Button from '@/components/ui/Button';
+import Link from 'next/link';
 
 export default function ResponsiveHeader() {
   const [isChecked, setIsChecked] = useState(false);
@@ -32,12 +33,12 @@ export default function ResponsiveHeader() {
             <ul className="flex flex-col gap-4">
               {NAV_INPUTS.map(({ input, href }) => (
                 <li key={input}>
-                  <a
+                  <Link
                     className="flex flex-col w-150 p-3 rounded-lg text-lg font-inter font-semibold hover:bg-blue-500 hover:text-white hover:-translate-y-1 transition"
                     href={href}
                   >
                     {input}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

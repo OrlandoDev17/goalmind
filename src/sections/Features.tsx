@@ -1,4 +1,5 @@
 import FeatureCards from '@/components/ui/FeatureCards';
+import Paragraph from '@/components/ui/Paragraph';
 import SectionContainer from '@/components/ui/SectionContainer';
 
 export default function Features() {
@@ -11,10 +12,10 @@ export default function Features() {
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-inter text-center">
           Potencia tus objetivos con inteligencia
         </h2>
-        <p className="text-base md:text-lg max-w-150 lg:max-w-220 text-center text-gray-600 font-semibolds">
+        <Paragraph>
           GoalMind combian tecnología avanzada con psicología del comportamiento
           para ayudarte a alcanzar tus metas
-        </p>
+        </Paragraph>
       </div>
       <FeatureCards />
     </SectionContainer>

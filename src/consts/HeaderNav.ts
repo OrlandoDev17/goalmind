@@ -6,7 +6,7 @@ interface HeaderNavProps {
 export const NAV_INPUTS: HeaderNavProps[] = [
   {
     input: 'Inicio',
-    href: '#',
+    href: '/',
   },
   {
     input: 'Metas',

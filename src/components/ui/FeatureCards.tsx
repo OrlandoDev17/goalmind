@@ -1,3 +1,4 @@
+import Paragraph from './Paragraph';
 import { FEATURES_INFO } from '@/consts/FeaturesInfo';
 
 export default function FeatureCards() {
@@ -12,7 +13,9 @@ export default function FeatureCards() {
             <div className="flex flex-col gap-4">
               <Icon className="size-12 text-blue-500" />
               <h3 className="text-2xl font-bold">{title}</h3>
-              <p className="2xl:w-100 text-lg text-gray-600 ">{description}</p>
+              <Paragraph className="2xl:w-100 text-lg text-start">
+                {description}
+              </Paragraph>
             </div>
           </article>
         ))}

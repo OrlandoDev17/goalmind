@@ -2,6 +2,7 @@ import Button from '@/components/ui/Button';
 import { RightArrowIcon } from '@/components/Icons';
 import SectionContainer from '@/components/ui/SectionContainer';
 import { STEPS_TO_USE } from '@/consts/StepsToUse';
+import Paragraph from '@/components/ui/Paragraph';
 
 export default function HowToUse() {
   return (
@@ -16,7 +17,7 @@ export default function HowToUse() {
               </span>
               <div className="flex flex-col justify-center w-full">
                 <h3 className="font-semibold text-xl">{title}</h3>
-                <p className="text-base text-gray-600">{description}</p>
+                <Paragraph className="text-start">{description}</Paragraph>
               </div>
             </article>
           ))}

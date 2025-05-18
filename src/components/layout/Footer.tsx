@@ -1,9 +1,10 @@
 import SocialMedias from '@/components/SocialMedias';
 import { FOOTER_LINKS } from '@/consts/FooterNav';
+import Paragraph from '../ui/Paragraph';
 
 export default function Footer() {
   return (
-    <footer className="mt-36 mb-8 gap-12 mx-10 md:mx-24 xl:mx-36">
+    <footer className="mt-36 mb-8 mx-10 md:mx-24 xl:mx-36">
       <section className="grid grid-cols-1 xl:grid-cols-3 xl:place-items-center xl:items-start gap-4">
         <article className="flex items-start flex-col gap-6">
           <picture className="flex items-center gap-2">
@@ -16,10 +17,10 @@ export default function Footer() {
               Goal<span className="text-black">Mind</span>
             </h4>
           </picture>
-          <p className="text-gray-600 font-light text-pretty">
+          <Paragraph className="font-light text-pretty text-start">
             Plataforma inteligente para establecer, visualizar y alcanzar tus
             objetivos con ayuda de IA
-          </p>
+          </Paragraph>
           <SocialMedias />
         </article>
         <article className="flex flex-col justify-start gap-4">
