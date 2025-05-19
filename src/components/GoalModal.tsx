@@ -1,7 +1,6 @@
 import { useState, useId } from 'react';
 import Button from './ui/Button';
 import { PlusIcon } from './Icons';
-import Modal from './ui/Modal';
 
 export default function GoalModal() {
   const [showModal, setShowModal] = useState(false);
@@ -27,7 +26,6 @@ export default function GoalModal() {
 
         <input type="checkbox" id={modalCheckboxId} hidden />
       </form>
-      {showModal === true && <Modal />}
     </div>
   );
 }
