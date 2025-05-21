@@ -43,9 +43,19 @@ export default function ResponsiveHeader() {
               ))}
             </ul>
           </nav>
-          <div className="flex justify-center">
-            <Button className="w-150 flex justify-center" size="lg">
+          <div className="flex flex-col justify-center gap-4">
+            <Button
+              className="w-150 flex justify-center text-lg bg-white border-2  border-zinc-200 hover:bg-green-300"
+              href="/auth/login"
+            >
               Iniciar Sesión
+            </Button>
+            <Button
+              color="white"
+              className="w-150 flex justify-center text-lg"
+              href="/auth/register"
+            >
+              Registrarse
             </Button>
           </div>
         </aside>

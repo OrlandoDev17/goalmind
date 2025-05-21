@@ -11,7 +11,7 @@ export default function CallToAction() {
       <p className="text-gray-100 text-lg md:text-xl text-center">
         Únete a miles de personas que ya están alcanzando sus metas con GoalMind
       </p>
-      <Button size="base" className="bg-primary hover:bg-primary/90 mb-12">
+      <Button color="white" className="bg-primary hover:bg-primary/90 mb-12">
         Comenzar Gratis
         <RightArrowIcon />
       </Button>

@@ -1,8 +1,7 @@
 import { Metadata } from 'next';
 import { Montserrat, Inter } from 'next/font/google';
 import './globals.css';
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
+import LayoutWrapper from './layoutWrapper';
 
 const montserrat = Montserrat({
   variable: '--font-montserrat',
@@ -17,7 +16,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'GoalMind',
   description:
-    'GoalMind es una plataforma moderna que ayuda a los usuarios a establecer, visualizar y alcanzar objetivos con tecnología avanzada. A través de IA y datos inteligentes, el sistema ofrece recomendaciones personalizadas para mejorar el progreso en cualquier área: productividad, aprendizaje, hábitos saludables, etc.',
+    'GoalMind es una plataforma moderna que ayuda a los usuarios a establecer, visualizar y alcanzar objetivos con tecnología avanzada.',
   icons: {
     icon: './images/logo-GoalMind.svg',
   },
@@ -25,19 +24,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
         className={`${montserrat.variable} ${inter.variable} antialiased overflow-x-hidden`}
       >
-        <div className="min-h-screen flex flex-col">
-          <Header />
-          <main className="relative top-19 flex-1">{children}</main>
-          <Footer />
-        </div>
+        <LayoutWrapper>{children}</LayoutWrapper>
       </body>
     </html>
   );

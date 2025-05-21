@@ -53,8 +53,14 @@ export default function Header() {
       </nav>
       <div className="flex items-center gap-4">
         <MoonIcon className="size-7" />
-        <Button className="hidden xl:flex" size="base">
+        <Button
+          href="/auth/login"
+          className="hidden xl:flex border-2 bg-white border-zinc-200 hover:bg-green-300"
+        >
           Iniciar Sesión
+        </Button>
+        <Button color="white" href="/auth/register" className="hidden xl:flex">
+          Registrarse
         </Button>
         <ResponsiveHeader />
       </div>

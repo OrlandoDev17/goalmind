@@ -22,7 +22,7 @@ export default function HowToUse() {
             </article>
           ))}
         </div>
-        <Button size="lg" className="max-w-64">
+        <Button color="white" className="max-w-64 text-lg">
           Comenzar Ahora
           <RightArrowIcon className="size-8" />
         </Button>
