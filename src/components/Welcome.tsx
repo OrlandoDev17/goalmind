@@ -12,7 +12,7 @@ export default function Welcome() {
         inteligencia artificial
       </p>
       <div className="flex gap-4 z-10">
-        <Button className="text-sm xl:text-lg" href="/dashboard">
+        <Button className="text-sm xl:text-lg" href="/goals">
           Comenzar Ahora
           <RightArrowIcon className="size-6" />
         </Button>

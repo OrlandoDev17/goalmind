@@ -1,7 +1,7 @@
-import CallToAction from '@/sections/CallToAction';
-import Features from '@/sections/Features';
-import Hero from '@/sections/Hero';
-import HowToUse from '@/sections/HowToUse';
+import CallToAction from '@/components/sections/CallToAction';
+import Features from '@/components/sections/Features';
+import Hero from '@/components/sections/Hero';
+import HowToUse from '@/components/sections/HowToUse';
 
 export default function Home() {
   return (

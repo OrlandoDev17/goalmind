@@ -1,5 +1,5 @@
 import SocialMedias from '@/components/SocialMedias';
-import { FOOTER_LINKS } from '@/consts/FooterNav';
+import { FOOTER_LINKS } from '@/consts/Consts';
 import Paragraph from '../ui/Paragraph';
 
 export default function Footer() {

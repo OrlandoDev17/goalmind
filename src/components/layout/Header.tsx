@@ -9,7 +9,7 @@ import Button from '@/components/ui/Button';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { NAV_INPUTS } from '@/consts/HeaderNav';
+import { NAV_INPUTS } from '@/consts/Consts';
 
 export default function Header() {
   const [activeInput, setActiveInput] = useState<{

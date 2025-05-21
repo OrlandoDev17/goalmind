@@ -1,5 +1,5 @@
 import Paragraph from './Paragraph';
-import { FEATURES_INFO } from '@/consts/FeaturesInfo';
+import { FEATURES_INFO } from '@/consts/Consts';
 
 export default function FeatureCards() {
   return (

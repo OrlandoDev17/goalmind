@@ -30,7 +30,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.variable} ${inter.variable} antialiased`}>
+      <body
+        className={`${montserrat.variable} ${inter.variable} antialiased overflow-x-hidden`}
+      >
         <div className="min-h-screen flex flex-col">
           <Header />
           <main className="relative top-19 flex-1">{children}</main>

@@ -2,7 +2,7 @@
 
 import { useId, useState } from 'react';
 import { BarsIcon } from '@/components/Icons';
-import { NAV_INPUTS } from '@/consts/HeaderNav';
+import { NAV_INPUTS } from '@/consts/Consts';
 import Button from '@/components/ui/Button';
 import Link from 'next/link';
 

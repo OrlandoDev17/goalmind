@@ -1,7 +1,7 @@
 import Button from '@/components/ui/Button';
 import { RightArrowIcon } from '@/components/Icons';
 import SectionContainer from '@/components/ui/SectionContainer';
-import { STEPS_TO_USE } from '@/consts/StepsToUse';
+import { STEPS_TO_USE } from '@/consts/Consts';
 import Paragraph from '@/components/ui/Paragraph';
 
 export default function HowToUse() {

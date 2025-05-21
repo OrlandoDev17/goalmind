@@ -1,4 +1,4 @@
-import { SOCIAL_LINKS } from '@/consts/SocialMedias';
+import { SOCIAL_LINKS } from '@/consts/Consts';
 
 export default function SocialMedias() {
   return (
