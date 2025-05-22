@@ -3,13 +3,13 @@ import AuthForm from '@/components/auth/AuthForm';
 import AuthButton from '@/components/auth/AuthButton';
 import AuthFooter from '@/components/auth/AuthFooter';
 
-export default function LoginPage() {
+export default function RegisterPage() {
   return (
     <>
-      <AuthHeader type="login" />
-      <AuthForm type="login" />
-      <AuthButton type="login" />
-      <AuthFooter type="login" />
+      <AuthHeader type="register" />
+      <AuthForm type="register" />
+      <AuthButton type="register" />
+      <AuthFooter type="register" />
     </>
   );
 }
