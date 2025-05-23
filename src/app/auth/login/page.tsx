@@ -1,6 +1,5 @@
 import AuthHeader from '@/components/auth/AuthHeader';
 import AuthForm from '@/components/auth/AuthForm';
-import AuthButton from '@/components/auth/AuthButton';
 import AuthFooter from '@/components/auth/AuthFooter';
 
 export default function LoginPage() {
@@ -8,7 +7,6 @@ export default function LoginPage() {
     <>
       <AuthHeader type="login" />
       <AuthForm type="login" />
-      <AuthButton type="login" />
       <AuthFooter type="login" />
     </>
   );

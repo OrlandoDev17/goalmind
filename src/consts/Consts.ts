@@ -151,3 +151,33 @@ export const FOOTER_LINKS: FooterNavProps[] = [
     href: '/recomendaciones',
   },
 ] as const;
+
+interface FormFieldsProps {
+  label: string;
+  placeholder: string;
+  inputType: string;
+  id: string;
+  type?: 'login' | 'register';
+}
+
+export const FORM_FIELDS: FormFieldsProps[] = [
+  {
+    label: 'Nombre Completo',
+    placeholder: 'Orlando López',
+    inputType: 'text',
+    id: 'fullName',
+    type: 'register',
+  },
+  {
+    label: 'Email',
+    placeholder: 'tu@email.com',
+    inputType: 'email',
+    id: 'email',
+  },
+  {
+    label: 'Contraseña',
+    placeholder: '••••••••',
+    inputType: 'password',
+    id: 'password',
+  },
+] as const;
